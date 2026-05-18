@@ -5,11 +5,12 @@ description = "CLI tool that converts dataflow Verilog into optimized gate-level
 readme = "README.md"
 requires-python = ">=3.11"
 dependencies = [
+    "rich>=15.0.0",
     "typer>=0.24.1",
 ]
 
 [project.scripts]
-gatesmith = "gatesmith.cli:app"
+gatesmith = "gatesmith.cli.main:app"
 
 [dependency-groups]
 dev = [
